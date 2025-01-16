@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>garvv hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/LOGO (2).png" alt="">
+        </div>
+        <ul>
+            <li><a href="https://maps.app.goo.gl/LgoHN5gtmbMkf3dr5" target="_blank">location</a></li>
+            <li><a href="https://www.instagram.com/garv_manchanda_/" target="_blank">contact</a></li>
+            <li><a href="img/naan.jpg" target="_blank">bestseller</a></li>
+            <li><a href="login.html" target="_blank">login</a></li>
+        </ul>
+
+
+
+    </header>
+
+    <main>
+        <SEction>
+
+            <img src="img/X.png" alt="">
+            <p>BEST FOOD AND DRINKS IN MALVIYA NAGAR</p>
+            <label for="fav dish"> ANY WISH?</label>
+            <input type="text" id="fav dish" placeholder="search for fav dish">
+        </SEction> <!-- use img/parata.png for background -->
+        <SEction>
+            <P>ORDER ONLINE OR DINE IN </P>
+            <img src="img/burger.jpg" alt="">
+            <img src="img/pizza.jpg" alt="">
+            <img src="img/ch.jpg" alt="">
+            <style>
+                /* CSS for the section */
+
+                section {
+                    text-align: center;
+                    background-color: #fff9e6;
+                    /* Soft yellow background */
+                    padding: 20px;
+                    margin: 20px auto;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    max-width: 800px;
+                }
+
+                section p {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #ff8c00;
+                    /* Dark orange */
+                    margin-bottom: 20px;
+                }
+
+                section img {
+                    width: 200px;
+                    height: auto;
+                    margin: 10px;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
+
+                section img:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                }
+            </style>
+        </SEction>
+        <section>
+            <a href="ORDER.HTML" target="_blank">ORDER</a>
+<style>section a {
+    color: rgb(255, 17, 0); /* Text color yellow */
+    text-decoration: red; 
+    font-weight: bold;/* Removes underline */
+}
+</style>
+
+        </section>
+
+    </main>
+
+    <footer>
+        copyright &copy; -ALL RIGHTS RESERVED
+
+
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+<style>
+
+    
+    
+    /* Reset and basic styling */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff9e6;
+    /* Soft yellow background */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffd700;
+    /* Golden yellow */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header ul li a:hover {
+    background: url(/img/parata.png);
+    background-position: center;
+    background-size: cover;
+    /* Light yellow */
+}
+
+/* Main section styling */
+main {
+    text-align: center;
+    padding: 20px;
+    background: url(/img/BG.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    background-blend-mode: color-burn;
+    color: #333;
+}
+
+main img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff0000;
+    /* Dark orange */
+}
+
+label {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    width: 300px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff8c00;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffd700;
+    color: #333;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+<script>
+    // script.js
+
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("fav dish");
+
+    // Focus effect for the search input
+    searchInput.addEventListener("focus", () => {
+        searchInput.style.backgroundColor = "#fff4cc"; // Light yellow
+    });
+
+    searchInput.addEventListener("blur", () => {
+        searchInput.style.backgroundColor = "white";
+    });
+
+    // Animation for the main text
+    const mainText = document.querySelector("main p");
+    mainText.style.opacity = 0;
+    mainText.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+        mainText.style.transition = "opacity 1s, transform 1s";
+        mainText.style.opacity = 1;
+        mainText.style.transform = "translateY(0)";
+    }, 500);
+
+    // Navigation link hover effect (scaling)
+    const navLinks = document.querySelectorAll("header ul li a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("mouseover", () => {
+            link.style.transform = "scale(1.1)";
+            link.style.transition = "transform 0.2s";
+        });
+
+        link.addEventListener("mouseout", () => {
+            link.style.transform = "scale(1)";
+        });
+    });
+});
+
+</script>
+
+</html>
